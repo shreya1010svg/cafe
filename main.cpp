@@ -158,6 +158,27 @@ int Employee::empopp()
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
 
+class Customer {
+private:
+    int rating;
+
+public:
+    void getRating();
+    void displayRating();
+    void addtodatabase();
+
+};
+
+void Customer::getRating() {
+}
+
+void Customer::displayRating() {
+}
+
+void Customer::addtodatabase() {
+}
+
+
 int main()
 {
 	cout<<"Welcome to the Cafeteria!"<<endl;
