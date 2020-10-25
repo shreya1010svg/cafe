@@ -220,8 +220,22 @@ int main()
 				}
 			case 3:
 				{
-					Item item1(1,20,"a",1,"b",2,"",0,"",0,"",0);
-					Item item2(2,50,"c",0.5,"a",1,"",0,"",0,"",0);
+				    char ch1[20],ch2[20],ch3[20],ch4[20],ch5[20];
+				    float a1,a2,a3,a4,a5,price;
+				    cout<<"enter 5 ingredients for item 1"<<endl;
+				    gets(ch1);gets(ch2);gets(ch3);gets(ch4);gets(ch5);
+				    cout<<"enter the price"<<endl;
+				    cin>>price;
+				    cout<<"enter their amounts"<<endl;
+				    cin>>a1>>a2>>a3>>a4>>a5;
+					Item item1(1,price,ch1,a1,ch2,a2,ch3,a3,ch4,a4,ch5,a5);
+					cout<<"enter 5 ingredients for item 1"<<endl;
+				    gets(ch1);gets(ch2);gets(ch3);gets(ch4);gets(ch5);
+				    cout<<"enter the price"<<endl;
+				    cin>>price;
+				    cout<<"enter their amounts"<<endl;
+				    cin>>a1>>a2>>a3>>a4>>a5;
+					Item item2(2,price,ch1,a1,ch2,a2,ch3,a3,ch4,a4,ch5,a5);
 					int choice;
 					cout<<"Do you want to buy item 1 or item 2?";
 					cin>>choice;
