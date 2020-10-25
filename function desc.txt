@@ -1,0 +1,23 @@
+class cafeteria
+	chooseuser() - used to select the type of user owner/employee
+	owneroperations() - used to select the type of operation to be performed by owner
+	employeeoperations() - used to select the type of operation to be performed by employee
+
+class Accounts
+	owneraccop() - used to select the type of accounting operation 
+	addBill() - add the bill amount 
+	giveSalaryToEmployee() - used to update the salary given to an employee
+	deductExpenses() - deducts the expenses
+class Item
+	Item() - constructor to initialize the values
+	personBoughtItem() - generates the bill for the item bought
+	ingridientsForNextWeek() - deducts the amount of ingridients bought
+class Employee()
+	empopp() - used to select the type of operation
+	getData() - used to input the required employee details
+	display() - used to display the employee    ddetttails
+	aaddSalary() - used to add salary to employee
+class Customer
+	getRating() - used to get the rating from a customer
+	displayRating() - used to display the rating given by the customers
+	addtodatabase() -  used to add the ratings to the customer 
