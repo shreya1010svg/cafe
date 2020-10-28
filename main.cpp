@@ -39,6 +39,41 @@ int Cafeteria::employeeoperations()
 
 //---------------------------------------------------------------------------------------------------------------------------------
 
+class Customer
+{
+	public:
+		void getRating();
+		void addtodatabase();
+		void displayRating();
+};
+
+void Customer::getRating()
+{
+	int rating;
+	cout<<"Give us a rating out of 5: "<<endl;
+	cin>>rating;
+}
+
+void Customer::addtodatabase()
+{
+	int rating;
+	ofstream file;
+            file.open("accounts.csv",ios::app);
+
+		    file<<rating<<"  , "
+		        <<"\n";
+		    file.close();
+	
+}
+
+void Customer::displayRating()
+{
+	int rating;
+	cout<<"You have given us a " << rating << " star rating. Thank you for your feedback.";
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------
+
 class Accounts: public Cafeteria//Use static methods
 {
 	private:
